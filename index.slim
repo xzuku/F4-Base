@@ -1,0 +1,135 @@
+doctype html
+/[if IE 8]
+  | <html class="no-js lt-ie9">
+/[if IE 9]
+  | <html class="ie9">
+html.no-js
+  /! <![endif]
+
+  head
+    meta charset="utf-8"
+    meta name="viewport" content="width=device-width"
+    title Foundation 4
+    link rel="stylesheet" href="css/normalize.css"
+    link rel="stylesheet" href="css/main.css"
+    script src="js/vendor/custom.modernizr.js"
+  body
+    #navigation
+      nav.top-bar
+        ul.title-area
+          li.name: h1: a href="#" Site Title
+          li.toggle-topbar.menu-icon: a href="#" <span>Menu<span>
+        section.top-bar-section
+          ul.right
+            li.divider
+            li: a href="#" Home
+            li.has-dropdown
+              a href="#" Services
+              ul.dropdown
+                li.hide-for-large-up: a href="#" Section Landing (Hidden on Desktop View)
+                li: a href="#" Dropdown Level 1a
+                li.has-dropdown
+                  a href="#" Dropdown Level 1b
+                  ul.dropdown
+                    li.hide-for-large-up: a href="#" Section Landing (Hidden on Desktop View)
+                    li: a href="#" Dropdown Level 2a
+                    li: a href="#" Dropdown Level 2b
+                li: a href="#" Dropdown Level 1c
+            li: a href="#" About
+            li: a href="#" Contact
+    .container
+      header
+        hgroup
+          h1 G's Foundation 4 Base (H1)
+      #orbit  
+        ul data-orbit="" data-options="bullets: false; timer_speed: 0;"
+          li data-orbit-slide="SlideA"
+            img src="http://placehold.it/1280x720&text=Slide+A"
+          li data-orbit-slide="SlideB"
+            img src="http://placehold.it/1280x720&text=Slide+B"
+          li data-orbit-slide="SlideC"
+            img src="http://placehold.it/1280x720&text=Slide+C"
+      section
+        h2 Text Style Sheet (H2)
+        h2.subheader This <em>Should</em> Have All Text Styles
+        h3 Headline Three Sub-header Lorem Ipsum (H3)
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.
+        hr
+        h2 Header Two Lorem Ipsum Sit Dolor (H2)
+        p Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
+        h4 
+          a href="#" Header Four Lorem Ipsum Sit Dolor (H4)
+        h4.subheader The Fourth Header with a Subheader Class (H4 Subheader)
+        p Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
+        table
+          tbody
+            tr
+              td colspan="6"
+                h2 A Sample Six Column Table (H2)
+            tr
+              td
+                strong Company
+              td
+                strong Mailing Address
+              td
+                strong Phone
+              td
+                strong Contact
+              td
+                strong Web
+              td
+                strong Listed
+            tr
+              td
+                | Lorem Ipsum Biz
+                br
+                  | Sit Dolor Amit Company
+              td
+                | 5823 Infinite Loop
+                br
+                  | Honolulu, HI 96821
+              td 1 (808) 555-1234
+              td Malia Johnson
+              td
+                a href="#" target="_blank" URL
+              td Yes
+            
+        h5 Header Five Lorem Ipsum Sit Dolor (H5)
+        p Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
+        .alert-box data-alert="" 
+          | An Alert Box of Sorts
+          a.close href="#" &times;
+        .panel
+          h6 Header Six Lorem Ipsum Sit Dolor (H6)
+          p Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus. Nunc tellus ante, mattis eget, gravida vitae, ultricies ac, leo. Integer leo pede, ornare a, lacinia eu, vulputate vel, nisl.
+        blockquote Morbi interdum mollis sapien. Sed ac risus. Phasellus lacinia, magna a ullamcorper laoreet, lectus arcu pulvinar risus, vitae facilisis libero dolor a purus. Sed vel lacus. (Blockquote)
+        a.button.rounded.large href="#" A Sample Large Button
+        p
+          a href="#" A Link to Another Page
+        hr
+        ul.disc
+          li Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu. Cras consequat.
+          li Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.
+          li Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
+
+    | <script>
+    |   document.write('<script src=' +
+    |   ('__proto__' in {} ? 'js/vendor/zepto' : 'js/vendor/jquery') +
+    |   '.js><\/script>')
+    | </script>
+    
+    script src="js/foundation/foundation.js"
+  	script src="js/foundation/foundation.alerts.js"
+  	script src="js/foundation/foundation.clearing.js"
+  	script src="js/foundation/foundation.cookie.js"
+  	script src="js/foundation/foundation.dropdown.js"
+  	script src="js/foundation/foundation.forms.js"
+  	script src="js/foundation/foundation.joyride.js"
+  	script src="js/foundation/foundation.magellan.js"
+  	script src="js/foundation/foundation.orbit.js"
+  	script src="js/foundation/foundation.placeholder.js"
+  	script src="js/foundation/foundation.reveal.js"
+  	script src="js/foundation/foundation.section.js"
+  	script src="js/foundation/foundation.tooltips.js"
+  	script src="js/foundation/foundation.topbar.js"  
+    script $(document).foundation();

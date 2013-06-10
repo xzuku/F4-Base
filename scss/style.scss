@@ -1,0 +1,15 @@
+@import "base";
+
+* {
+  @include box-sizing(border-box);
+}
+
+#navigation{
+  background-color: $topbar-bg;
+  nav {
+    @include grid-row;
+  }
+}
+.container {
+  @include grid-row;
+}
